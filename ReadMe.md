@@ -3,3 +3,7 @@ Our project is going to be an app that helps customers(people looking to buy a c
 Responsibilities:
 Akshay-Contoller, View code
 Raymond-Model, DbContext/Migration code
+
+Update-Database -ConfigurationTypeName CarBrokers.Migrations.ApplicationDbContext.Configuration
+
+Update-Database -ConfigurationTypeName CarBrokers.Migrations.CarBrokersContext.Configuration

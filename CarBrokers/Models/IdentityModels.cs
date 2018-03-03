@@ -36,6 +36,8 @@ namespace CarBrokers.Models
         {
         }
 
+        public DbSet<ApplicationRole> ApplicationRoles { get; set; }
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();

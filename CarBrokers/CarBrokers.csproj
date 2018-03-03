@@ -213,6 +213,10 @@
     <Compile Include="Migrations\ApplicationDbContext\201802210335218_Role.Designer.cs">
       <DependentUpon>201802210335218_Role.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\ApplicationDbContext\201803032259075_FixRoles.cs" />
+    <Compile Include="Migrations\ApplicationDbContext\201803032259075_FixRoles.Designer.cs">
+      <DependentUpon>201803032259075_FixRoles.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\ApplicationDbContext\Configuration.cs" />
     <Compile Include="Migrations\CarBrokersContext\201802212026048_InitialDatabaseCreation.cs" />
     <Compile Include="Migrations\CarBrokersContext\201802212026048_InitialDatabaseCreation.Designer.cs">
@@ -360,6 +364,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\ApplicationDbContext\201802210335218_Role.resx">
       <DependentUpon>201802210335218_Role.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\ApplicationDbContext\201803032259075_FixRoles.resx">
+      <DependentUpon>201803032259075_FixRoles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\CarBrokersContext\201802212026048_InitialDatabaseCreation.resx">
       <DependentUpon>201802212026048_InitialDatabaseCreation.cs</DependentUpon>

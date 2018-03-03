@@ -1,6 +1,8 @@
 namespace CarBrokers.Migrations.ApplicationDbContext
 {
+    using CarBrokers.Models;
     using System;
+    using System.Collections.Generic;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
@@ -16,10 +18,15 @@ namespace CarBrokers.Migrations.ApplicationDbContext
 
         protected override void Seed(CarBrokers.Models.ApplicationDbContext context)
         {
-            //  This method will be called after migrating to the latest version.
+            var Roles = new List<ApplicationRole>
+            {
+                new ApplicationRole{Id = "1", Name = "Admin" },
+                new ApplicationRole{Id = "2", Name = "Customer"},
+                new ApplicationRole{Id = "3", Name = "Broker"}
 
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-            //  to avoid creating duplicate seed data.
+            };
+            Roles.ForEach(r => context.ApplicationRoles.AddOrUpdate(r));
+            context.SaveChanges();
         }
     }
 }
